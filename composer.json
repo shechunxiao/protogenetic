@@ -1,0 +1,24 @@
+{
+    "name": "administrator/protogenetic",
+    "description": "self item for ceshi",
+    "authors": [
+        {
+            "name": "scx",
+            "email": "282074579@qq.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files": [
+            "app/Function/function.php"
+        ],
+        "classmap": [
+
+        ]
+    }
+}
