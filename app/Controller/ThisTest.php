@@ -18,8 +18,8 @@ class ThisTest{
         }
     }
     public function close($a,Closure $callback){
-//        $result = call_user_func($callback,10,20);
-        $result = $callback($this);
+        $result = call_user_func($callback,$this);
+//        $result = $callback($this);
         return $result.$a;
     }
     public function test(){
