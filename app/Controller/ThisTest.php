@@ -25,5 +25,17 @@ class ThisTest{
     public function test(){
         echo 222;
     }
+    public function __call($name, $arguments)
+    {
+        // TODO: Implement __call() method.
+        echo '调用了没有存在的方法'.$name.'<br/>';
+        print_r($arguments);
+    }
+    public static function __callStatic($name, $arguments)
+    {
+        // TODO: Implement __callStatic() method.
+        echo '调用了没有存在的方法,__callStatic'.$name.'<br/>';
+        print_r($arguments);
+    }
 
 }

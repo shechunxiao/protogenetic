@@ -24,10 +24,12 @@ echo '<br>';
 
 $thisTest = new ThisTest();
 $thi = $thisTest->index();
+
 $get_class = get_class($thisTest);
 print_r($get_class);
 $thisTest->check();
 echo '<br/>';
+$thisTest->nnnn(1,2,3,4);
 
 //闭包函数学习测试
 $d = 3;
@@ -43,6 +45,14 @@ $closureFirst->ClosureTest(function($app){
     return $app->active();
 });
 
+$e = new stdClass();
+$e->name = 22;
+if (is_object($e)){
+    echo '是一个对象';
+}else{
+    echo '不是一个对象';
+}
+ThisTest::get(11,22,33,44);
 
 
 
