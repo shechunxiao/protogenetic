@@ -11,6 +11,9 @@ use app\Controller\ThreeImplements;
 
 require 'bootstrap/app.php';
 
+//定义常量的方法
+define('AppSelf','shechuxniao.com');
+
 $a = new FirstController();
 $a->index();
 echo '<br>';
@@ -56,10 +59,12 @@ if (is_object($e)){
 ThisTest::get(11,22,33,44);
 //trait类的测试,变相的实现多继承问题
 $four = new FourController();
-$four->index();
 $four->change();
+$four->index();
 
-//类继承的同时也会实现相应的接口
+
+
+
 
 
 

@@ -6,11 +6,20 @@ use app\Controller\Users\TraitOne;
 use Closure;
 class FourController extends Base implements ThreeInterface,ClosureInterface {
     use TraitOne;
+    public $b;
     public function index(){
         $this->test();
     }
     public function test(){
-        echo 'FourController/test';
+        echo 'FourController/test|||||';
+       $temp = $this->b;
+       if (is_null($this->b)){
+           echo 'null';
+       }else{
+           echo '非null';
+       }
+       $a = 1;
+       print_r((Object)$a);
     }
     public function change()
     {
