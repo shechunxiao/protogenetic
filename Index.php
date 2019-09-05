@@ -3,6 +3,7 @@
 use app\Controller\ClosureFirst;
 use app\Controller\ClosureImplementOne;
 use app\Controller\FirstController;
+use app\Controller\FourController;
 use app\Controller\Man;
 use app\Controller\SecondController;
 use app\Controller\ThisTest;
@@ -53,6 +54,12 @@ if (is_object($e)){
     echo '不是一个对象';
 }
 ThisTest::get(11,22,33,44);
+//trait类的测试,变相的实现多继承问题
+$four = new FourController();
+$four->index();
+$four->change();
+
+//类继承的同时也会实现相应的接口
 
 
 
